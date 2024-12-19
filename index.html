@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <div class="wrapper"> <!-- для фона -->
+
+        <section>
+            <header class="container"> : <!-- класс, кот указывает отступы по бокам. для каждой новой секции одинак отступ справа и слева-->
+                <nav> <!-- навигация -->
+                    <button>Introduction</button>
+                    <button>Content</button>
+                    <button>Contacts</button>
+                </nav>
+                <img src="images/Group 3.svg" style="position: relative; right: 950px;" alt="" >
+                <img src="images/Group 4.svg" style="position: relative; left: 100px;" alt="" > :
+            </header>
+
+            <div class="img1">
+                <div style="text-align:center;">
+                    <img src="images/PORTFOLIOlikephoto.png" alt="image description" class="portfolio-image"> 
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <article class="introdaction"> 
+                <h1 style="padding-left: 35vw; padding-top: 14vw; padding-bottom: 0vw;">Introdaction</h1>
+                <div class="cells-container">
+
+                    <article class="firstcell">
+                        <div class="photoandname" style="text-align:left;">
+                            <img src="images/photo.png" alt="">
+                            <h3> Olesya Sorokina</h3>
+                        </div>
+        
+                        <div class="education">
+                            <h1> Education</h1>
+                            <p>Bachelor's Degree in Information Technology in Design 2022 - Herzen University Russia, Saint Petersburg</p>
+                        </div>
+        
+                        <div class="language">
+                            <h1>Languages</h1>
+                            <div class="row">
+                                <div class="rowR">
+                                    <img src="images/Ellipse 16.svg" alt="">
+                                    <h3>Russian</h3>
+                                </div>
+                                    
+                                <div class="rowE">
+                                    <img src="images/Ellipse 17.svg" alt=""> 
+                                    <h3>English</h3>
+                                </div>
+                            </div>
+        
+                            <div class="row2">
+                                <h3>Native</h3>
+                                <h3>B1</h3>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="secondcell">
+                        <div class="me">
+                            <h1> About me</h1>
+                            <p>I use my knowledge in the field of color theory, drawing, layout and typography to develop digital, visual and printed content. I have experience in creating websites, design for video games and board games, posters and other interesting elements.</p>
+                        </div>
+        
+                        <div class="info">
+                            <h1> Technical skills</h1>
+                            
+                            <div class="block">
+                                <img src="images/Zadobe.svg" alt="">
+                                <h3>Adobe Photoshop</h3>
+                                <img src="images/forAdobeP.svg" alt="">
+                            </div>
+        
+                            <div class="block">
+                                <img src="images/Zfigma.svg" alt="">
+                                <h3>Figma</h3>
+                                <img src="images/forfigma.svg" alt="">
+                            </div>
+        
+                            <div class="block">
+                                <img src="images/Zkrita.svg" alt="">
+                                <h3>Krita</h3>
+                                <img src="images/forkrita.svg" alt="">
+                            </div>
+        
+                            <div class="block">
+                                <img src="images/Z3dmaya.png" alt="">
+                                <h3>3d Maya</h3>
+                                <img src="images/Group 2.svg" alt="">
+                            </div>
+                        </div>
+
+                        
+                     <h1>Skills set</h1>
+                    </article>
+                </div> 
+
+
+                <section>
+                    <article class="contents">
+                        <h1>Contents</h1>
+                        <div class="content_buttons">
+                            <button type="button" class="btn2">
+                                <h1>01</h1>
+                                 <span class="small"> Posters</span>
+                            </button>
+
+                            <button type="button" class="btn2">
+                                <h1>02</h1>
+                                 <span class="small"> 3D Modeling</span>
+                            </button>
+
+                            <button type="button" class="btn2">
+                                <h1>03</h1>
+                                 <span class="small"> Typograthy</span>
+                            </button>
+
+                            <button type="button" class="btn2">
+                                <h1>04</h1>
+                                 <span class="small"> Logo</span>
+                            </button>
+
+                            <button type="button" class="btn2">
+                                <h1>05</h1>
+                                 <span class="small"> Personal Project</span>
+                            </button>
+
+                            <button type="button" class="btn2">
+                                <h1>06</h1>
+                                 <span class="small"> Arts</span>
+                            </button>
+                         </div>
+                    </article>
+                </section>
+
+                <h1>Posters</h1>
+
+
+                <div class="controls">  
+                    <img src="images/strelka2.svg" alt="left" id="leftBtn">
+                    <div class="allcontents">
+                        <div class="gallery">
+                            <span><img src="images/Posters1.png"></span>
+                        </div>
+
+                        <div class="gallery">
+                            <span><img src="images/Posters2.png"></span>
+                        </div>
+                    
+                </div>
+                    <img src="images/strelka.svg" alt="right" id="rightBtn">
+                </div>
+
+                <script>
+                    let horizontScroll = document.querySelector('.allcontents')
+                    let leftBtn =  document.getElementById('leftBtn');
+                    let rightBtn =  document.getElementById('rightBtn');
+
+                    rightBtn.addEventListener('click', ()=> {
+                        horizontScroll.style.scrollBehavior = "smooth";
+                        horizontScroll.scrollLeft += 1000;
+                    })
+                    leftBtn.addEventListener('click', ()=> {
+                        horizontScroll.scrollLeft -= 1000;
+                        horizontScroll.style.scrollBehavior = "smooth";
+                    })
+                </script>
+               
+                <h3>Posters for the year of teacher</h3>
+                
+        
+            </article>
+        </section>
+    
+     </div>
+     
+     <!-- <section class="allcontents">
+        <article>
+            <h1>Posters</h1>
+            <div class="gallery">
+                <span><img src="images/strelka2.svg"></span>
+                <img src="images/Posters1.png" alt="" class="img2">
+                <img src="images/Posters2.png" alt="" class="img2">
+                <div><img style="opacity: 1; height: 100%;" src="images/strelka.svg" alt="" class="next smalls"></div>
+            </div>
+            <h3>Posters for the year of teacher</h3>
+        </article>
+    </section>
+     -->
+
+
+
+
+
+
+
+        
+
+
+<script src="myscript.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

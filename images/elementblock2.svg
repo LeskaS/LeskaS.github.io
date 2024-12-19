@@ -1,0 +1,6 @@
+<svg width="1200" height="1441" viewBox="0 0 1200 1441" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6.5" cy="6.5" r="6" transform="rotate(180 6.5 6.5)" fill="white" stroke="white"/>
+<path d="M1 47V1500" stroke="white"/>
+<circle cx="6.5" cy="6.5" r="6" transform="matrix(1 0 0 -1 1187 13)" fill="white" stroke="white"/>
+<path d="M1199 47V1500" stroke="white"/>
+</svg>

@@ -1,0 +1,22 @@
+/*@font-face {
+    font-family: Audiowide-Regular;
+    src: url('fonts/Audiowide-Regular.ttf') format('truetype');
+    
+}*/
+
+@font-face {
+    font-family: "Audiowide-Regular";
+    
+    src: url("fonts/Audiowide-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "B612Mono-Regular";
+    
+    src: url("fonts/B612Mono-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
