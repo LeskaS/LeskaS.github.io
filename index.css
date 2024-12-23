@@ -2,6 +2,13 @@ body {
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+
+
 p {
     color: #ffffff;
     font-family: 'B612Mono-Regular';
@@ -110,15 +117,56 @@ header button {
     transition: transform 0.3s ease, border 0.3s ease; 
 }
 
+
+.arrow {
+    width: 3%;
+    height: 3%;
+    background-color: rgba(35, 35, 35, 0);
+    border-radius: 5%;
+    margin: 50px auto;
+    position: fixed;
+    z-index: 10;
+
+    transition: transform 2s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Центрирование контента внутри */
+    bottom: 5%; /* Расстояние от нижней границы экрана */
+    right: 4%; /* Расстояние от правой границы экрана */
+}
+
+
+
+.arrow:hover {
+    animation: fade 1s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 header button:hover {
     border: 2px solid #eacbe9; /* Цвет границы при наведении */
     transform: scale(1.1); /* Увеличение кнопки при наведении */
     z-index: 1; /* Увеличение z-inde чтобы кнопка была выше других элементов */
     color: transparent; /* текст прозрачным при наведении */
     background: linear-gradient(90deg, rgba(83, 26, 78, 1) 1%, rgba(255, 255, 255, 1) 100%);
-    -webkit-background-clip: text; /* Для Chrome и Safari */
-    background-clip: text; /* Для Firefox */
+    -webkit-background-clip: text; 
+    background-clip: text; 
 }
+
+
+
 
 html {
     background-image: url(images/phon.png);
@@ -428,8 +476,9 @@ img.smalls.next {
 }
 
 a[href^="tel:"] {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1.2rem;
+    line-height:1.2rem;
+    
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
   }

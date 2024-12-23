@@ -12,21 +12,22 @@
 <body>
 
     <div class="wrapper"> <!-- для фона -->
+        <div id="scrollToportfolio-image" class = "arrow"><img src="images/arrow.svg" alt="" ></div>
 
         <section>
             <header class="container"> : <!-- класс, кот указывает отступы по бокам. для каждой новой секции одинак отступ справа и слева-->
                 <nav> <!-- навигация -->
-                    <button>Introduction</button>
+                    <button id="scrollToIntroduction">Introduction</button>
                     <button>Content</button>
-                    <button>Contacts</button>
+                    <button id="scrollToContacts">Contacts</button>
                 </nav>
-                <img src="images/Group 3.svg" style="position: relative; right: 950px;" alt="" >
+                <img  id="portfolioImage" src="images/Group 3.svg" style="position: relative; right: 950px;" alt="" >
                 <img src="images/Group 4.svg" style="position: relative; left: 100px;" alt="" > :
             </header>
 
             <div class="img1">
                 <div style="text-align:center;">
-                    <img src="images/PORTFOLIOlikephoto.png" alt="image description" class="portfolio-image"> 
+                    <div class="portfolio-image" ><img src="images/PORTFOLIOlikephoto.png" alt="image description" class="portfolio-image"> </div>
                 </div>
             </div>
 
@@ -36,7 +37,7 @@
 
         <section>
             <article class="introdaction"> 
-                <h1 style="padding-left: 35vw; padding-top: 14vw; padding-bottom: 0vw;">Introdaction</h1>
+                <h1  id="introductionHeader" style="padding-left: 35vw; padding-top: 14vw; padding-bottom: 0vw;">Introdaction</h1>  
                 <div class="cells-container">
 
                     <article class="firstcell">
@@ -191,7 +192,7 @@
         <section>
             
             <actile class="contacts"> : 
-                <div class="contacts_h"><h1>Contacts</h1></div>
+                <div class="contacts_h"><h1 id="contactsHeader">Contacts</h1></div>
                 <div class="contacts1">
                     <img src="images/pochta.svg" alt="" > 
                     <a href="mailto:lesya.413@mail.ru&cc=mail@htmlacademy.ru?body=Привет!">lesya.413@mail.ru</a>
@@ -212,26 +213,10 @@
             </div>
             </div>
         </section>
+        
     
      </div>
      
-     <!-- <section class="allcontents">
-        <article>
-            <h1>Posters</h1>
-            <div class="gallery">
-                <span><img src="images/strelka2.svg"></span>
-                <img src="images/Posters1.png" alt="" class="img2">
-                <img src="images/Posters2.png" alt="" class="img2">
-                <div><img style="opacity: 1; height: 100%;" src="images/strelka.svg" alt="" class="next smalls"></div>
-            </div>
-            <h3>Posters for the year of teacher</h3>
-        </article>
-    </section>
-     -->
-
-
-
-
 
 
 
@@ -239,6 +224,10 @@
 
 
 <script src="myscript.js"></script>
+<script src="scrollToIntroduction.js"></script>
+
+<script src="scrollToContacts.js"></script>
+<script src="scrollToportfolio-image.js"></script>
 </body>
 
 </html>

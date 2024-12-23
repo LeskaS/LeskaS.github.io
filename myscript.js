@@ -30,3 +30,38 @@
 
 // // Initially show the first image
 // show(imageIndex);
+
+
+document.getElementById('scrollToContacts').addEventListener('click', function() {
+    const contactsHeader = document.getElementById('contactsHeader');
+    if (contactsHeader) {
+        contactsHeader.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        console.error('Element with ID "contactsHeader" not found.');
+    }
+});
+
+document.getElementById('scrollToIntroduction').addEventListener('click', function() {
+    const introductionHeader = document.getElementById('introductionHeader');
+    if (introductionHeader) {
+        introductionHeader.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        console.error('Element with ID "introductionHeader" not found.');
+    }
+});
+
+
+document.getElementById('scrollToportfolio-image').addEventListener('click', function() {
+    const portfolioImage = document.getElementById('portfolioImage');
+    if (portfolioImage) {
+        portfolioImage.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        console.error('Element with ID "portfolioImage" not found.');
+    }
+});
