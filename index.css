@@ -1,388 +1,162 @@
+/* Основные правила */
 body {
     overflow-x: hidden;
-}
-
-p {
-    color: #ffffff;
-    font-family: 'B612Mono-Regular';
-    font-style: 1.2975rem;
-}
-
-.audiowide-regular {
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h1 {
-    font-family: "Audiowide-Regular";
-    color: none;
-    font-size: 4.0625rem; 
-    text-shadow: 
-        -1px -1px 0 #ffffff,  
-         1px -1px 0 #ffffff,
-        -1px  1px 0 #ffffff,
-         1px  1px 0 #ffffff;
-}
-
-h3 {
-    font-family: "Audiowide-Regular";
-    font-size: 1.296rem; 
-    color: #fff;
-}
-
-.btn {
-    font-family: "Audiowide-Regular";
-    color: #fff;
-    font-size: 1.625rem; 
-}
-
-* {
     margin: 0;
     padding: 0;
 }
 
-a {
-    text-decoration: none;
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-
 
 .portfolio-image {
-    max-width: 100%; /* изображение не превышает ширину контейнера */
-    height: auto;    /* высота автоматически подстраивается */
-}
-
-.container {
-    width: 90%; /* адаптивная ширина */
-    max-width: 1400px; /* максимальная ширина */
-    margin: 0 auto; /* центрирование */
-}
-
-.header {
-    padding: 0.3125rem; 
+    max-width: 100%;
+    height: auto;
 }
 
 header {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 5vh; 
-    background-color: none; 
-    padding-top: 3%;
-}
-
-nav {
-    margin-left: 6.25rem; 
-
-}
-
-header nav {
-    width: 65%;
-    list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    margin: 0.625rem; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 0;
 }
 
 header button {
-    margin-left: 6.875rem;
-    font-family: Audiowide-Regular;
-    font-size: 1.8125rem; 
-    text-decoration: none;
-    color: transparent; 
-    background: #fff;
-    -webkit-background-clip: text;
-    background-clip: text; 
-    border: 2px solid #ffffff;
-    display: inline-block; 
-    padding: 0.5rem 1.5625rem; 
-    transition: transform 0.3s ease, border 0.3s ease; 
-}
-
-header button:hover {
-    border: 2px solid #eacbe9; /* Цвет границы при наведении */
-    transform: scale(1.1); /* Увеличение кнопки при наведении */
-    z-index: 1; /* Увеличение z-inde чтобы кнопка была выше других элементов */
-    color: transparent; /* текст прозрачным при наведении */
-    background: linear-gradient(90deg, rgba(83, 26, 78, 1) 1%, rgba(255, 255, 255, 1) 100%);
-    -webkit-background-clip: text; /* Для Chrome и Safari */
-    background-clip: text; /* Для Firefox */
-}
-
-html {
-    background-image: url(images/phon.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-}
-
-
-.img1{
-    padding-top: 15%;
-
-}
-.hero
-{
-    padding-top: 15%;
+    font-size: 1.2rem;
+    margin: 5px;
 }
 
 .introdaction {
-    padding-top: 0; 
-    margin-top: 1rem; 
-}
-.introdaction h1{
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 5% 10%;
 }
 
 .cells-container {
-    padding-top: 0;
-    display: flex;       
-    justify-content: space-between; 
-    align-items: flex-start; 
-    padding: 0 12%;  
-    padding-top: 7%;     
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .firstcell, .secondcell {
-    padding-top: 0;
-    flex: 1;                  
-    margin: 0 10px;          
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
 }
 
 .photoandname {
-    padding-top: 8%;
-    padding-left: 12%;
-    
+    text-align: center;
 }
 
 .photoandname h3 {
-    margin-top: 2rem;
-    display: flex;                
-    align-items: center;        
-    justify-content: center;   
-    padding-top: 40%;          
-    width: 24.1rem;             
-    height: 5rem;              
-    border: 0.2rem solid rgb(255, 255, 255); 
-    padding: 2rem;            
-    box-sizing: border-box;
-    font-size: 1.8125rem; 
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
- .education{
-    padding-top: 4rem;
-    padding-left: 12%;
-
- }
-
- .education p{
-    padding-top: 3rem;
-    padding-right: 25%;
-    font-size: 1.2975rem;
-
- }
-
- .language{
-    padding-top: 3rem;
-    padding-left: 12%;
- }
-
- .row {
-    padding-top: 8%;
-    display: flex;               
-    align-items: center;        
-    justify-content: flex-start; 
-    padding-right: 20%;    
+.language .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
 }
 
-.rowR, .rowE {
-    display: flex;             
-    align-items: center;        
+.contents {
+    text-align: center;
 }
 
-.rowR {
-    margin-right: 17%;        
-}
-
-.rowR h3, .rowE h3 {
-    padding-top: 4%;
-    margin: 0 7px;              
-}
-
-
-.row2 {
-    padding-top: 1%;
-    display: flex;               
-    align-items: center;        
-    justify-content: space-between; 
-    padding-left: 7%; 
-    padding-right: 40%; 
-}
-
-.row2 h3{
-    font-size: 0.9rem;
-    color:#827a7a;
-   
-}
-
-.contents h1{
-    padding-left: 37vw; 
-    padding-top: 18%; 
-}
-.content_buttons{
-
-    padding-top: 8%;
-    padding-left: 20%;
-    padding-right: 15%;
-    display: flex;               
-    align-items: center;        
-    justify-content: flex-start; 
-    flex-direction: row;
-    flex-wrap:wrap;
-    gap: 20px; /* между кнопками расст */
-
-
+.content_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
 }
 
 .btn2 {
-    
-    background-color: transparent;
-    border: 2px solid #fff;
-    display: flex;               
-    align-items: center;        
-    justify-content: flex-start; 
-    width: 18.25rem; 
-    height: 12.375rem;
-    
-  }
-  
-  .btn2 h1 {
-    padding: 0.5rem 1.5625rem;
-  }
-  
-.btn2 .small {
-    font-family: Audiowide-Regular;
-    font-size: 1rem;
-    color:#fff;
-    align-items: flex-end; 
-  }
-
-
-  .allcontents {
-    width: 960px;
-    display: flex;
-    overflow-x: scroll;
-   
-}
-
-.allcontents .gallery{
-    width: 100%;
-    display: flex;
-    grid-template-columns: auto;
-    grid-gap: 20px;
-    padding: 10px;
-    flex: none;
-
-}
-
-.allcontents .gallery img{
-    width: 100%;
-    height: 100%;
-
-}
-
-.allcontents::-webkit-scrollbar{
-    display: none;
+    width: 45%;
+    min-width: 150px;
 }
 
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10% auto;
-
 }
 
-.controls #rightBtn, .controls #leftBtn{
-    width: 3%;
+.controls img {
+    width: 40px;
     cursor: pointer;
-    margin: 1%;
-
+    margin: 0 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.posters {
-    padding-top: 7%;
-}
-
-.posters h1 {
-    padding-left: 39vw;
-    padding-top: 28%;
-}
-
-.posters h3 {
-    padding-left: 39vw;
-    padding-top: 75%;
-}
-
-.karuselka {
+.allcontents {
     display: flex;
-    align-items: center;  
-    justify-content: center;
-    position: relative;
-    padding-top: 45%; 
-    padding-left: 50%;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
 }
 
-.karuselka img.img2 {
-    width: 80%; /* Увеличиваем размер изображений */
+.allcontents .gallery {
+    flex: none;
+    width: 80%;
+    scroll-snap-align: center;
+}
+
+.allcontents img {
+    width: 100%;
     height: auto;
-    padding: 2%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s ease; /* Плавное переключение изображений */
 }
 
-.karuselka img.img2.active {
-    opacity: 1;
+/* Медиазапросы */
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cells-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
 }
 
-img.smalls {
-    height: auto;
-    width: 4%; /* Увеличиваем размер стрелок */
-    position: absolute;
-    cursor: pointer; /* Указатель мыши для кнопок */
-    top: 50%; /* Центрируем стрелки по вертикали */
-    transform: translateY(-0%); /* Центрирование стрелок по вертикали */
-    padding-right: 0%;
+@media (max-width: 768px) {
+    header button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .photoandname h3 {
+        font-size: 1.2rem;
+    }
+
+    .allcontents {
+        gap: 10px;
+    }
+
+    .allcontents .gallery {
+        width: 100%;
+    }
 }
 
-img.smalls.prev {
-    left: 10%; /* Размещение стрелки слева */
-}
+@media (max-width: 480px) {
+    h1, h3 {
+        font-size: 1.2rem;
+    }
 
-img.smalls.next {
-    right: 0; /* Размещение стрелки справа */
-   
+    header button {
+        font-size: 0.9rem;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+
+    .content_buttons {
+        gap: 10px;
+    }
 }
