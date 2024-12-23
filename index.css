@@ -31,6 +31,16 @@ h3 {
     color: #fff;
 }
 
+a {
+    font-family: "Audiowide-Regular";
+    font-size: 1.196rem; 
+    color: #fff;
+    font-size: 1.7rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+    padding: 2%;
+}
+
+
 .btn {
     font-family: "Audiowide-Regular";
     color: #fff;
@@ -303,7 +313,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10% auto;
+    margin: 5% auto;
+    
 
 }
 
@@ -314,33 +325,36 @@ html {
 
 }
 
-
-
-.posters {
-    padding-top: 7%;
+.zagolovok{
+    padding-left: 41%; 
+    padding-top: 25%;
 }
 
-.posters h1 {
-    padding-left: 39vw;
-    padding-top: 28%;
+
+.text{
+    padding-left: 41%; 
+    padding-top: 1%;
 }
 
-.posters h3 {
-    padding-left: 39vw;
-    padding-top: 75%;
+
+
+
+.controls h1{
+    padding-left: 40%;
+    padding-top: 20%S;
 }
 
-.karuselka {
+.gallery {
     display: flex;
     align-items: center;  
     justify-content: center;
     position: relative;
-    padding-top: 45%; 
+    padding-top: 30%; 
     padding-left: 50%;
 }
 
-.karuselka img.img2 {
-    width: 80%; /* Увеличиваем размер изображений */
+.gallery img.img2 {
+    width: 10%; /* Увеличиваем размер изображений */
     height: auto;
     padding: 2%;
     position: absolute;
@@ -348,7 +362,7 @@ html {
     transition: opacity 0.5s ease; /* Плавное переключение изображений */
 }
 
-.karuselka img.img2.active {
+.gallery img.img2.active {
     opacity: 1;
 }
 
@@ -370,3 +384,52 @@ img.smalls.next {
     right: 0; /* Размещение стрелки справа */
    
 }
+
+
+
+.contacts_h{
+    padding-left: 39%; 
+    padding-top: 10%;
+}
+
+.contacts1{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding-left: 29%; 
+    padding-right: 31%;
+    padding-top: 5%;
+    gap: 4%;
+}
+
+
+.contacts1 img{
+  
+    border: 0.1rem solid rgb(255, 255, 255);
+    padding: 1%;
+}
+
+
+.contacts2{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding-left: 29%; 
+    padding-right: 31%;
+    padding-top: 1%;
+    gap: 4%;
+}
+
+
+.contacts2 img{
+  
+    border: 0.1rem solid rgb(255, 255, 255);
+    padding: 1%;
+}
+
+a[href^="tel:"] {
+    font-size: 16px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #000000;
+  }
