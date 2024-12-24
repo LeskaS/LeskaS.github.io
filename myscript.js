@@ -55,6 +55,21 @@ document.getElementById('scrollToIntroduction').addEventListener('click', functi
 });
 
 
+
+document.getElementById('scrollToContent').addEventListener('click', function() {
+    const ContentHeader = document.getElementById('ContentHeader');
+    if (ContentHeader) {
+        ContentHeader.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        console.error('Element with ID "portfolioImage" not found.');
+    }
+});
+
+
+
+
 document.getElementById('scrollToportfolio-image').addEventListener('click', function() {
     const portfolioImage = document.getElementById('portfolioImage');
     if (portfolioImage) {

@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Olesya Sorokina">  <!-- Автор страницы -->
+    <meta name="description" content="This is a portfolio website showcasing my design, web development, and creative projects.">   <!-- Описание страницы для поисковых систем -->
+    <meta name="keywords" content="portfolio, design, web development, UI/UX, digital art, graphic design">  <!-- Ключевые слова для поисковых систем -->
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="fonts.css">
@@ -18,7 +22,7 @@
             <header class="container"> : <!-- класс, кот указывает отступы по бокам. для каждой новой секции одинак отступ справа и слева-->
                 <nav> <!-- навигация -->
                     <button id="scrollToIntroduction">Introduction</button>
-                    <button>Content</button>
+                    <button id="scrollToContent">Content</button>
                     <button id="scrollToContacts">Contacts</button>
                 </nav>
                 <img  id="portfolioImage" src="images/Group 3.svg" style="position: relative; right: 950px;" alt="logo placed on the left side of the header" >
@@ -114,7 +118,7 @@
 
                 <section>
                     <article class="contents">
-                        <h1>Contents</h1>
+                        <h1 id="ContentHeader">Contents</h1>
                         <div class="content_buttons">
                             <button type="button" class="btn2">
                                 <h1>01</h1>
@@ -226,6 +230,7 @@
 <script src="myscript.js"></script>
 <script src="scrollToIntroduction.js"></script>
 
+<script src="scrollToContent.js"></script>
 <script src="scrollToContacts.js"></script>
 <script src="scrollToportfolio-image.js"></script>
 </body>
