@@ -6,6 +6,10 @@
     <meta name="author" content="Olesya Sorokina">  <!-- Автор страницы -->
     <meta name="description" content="This is a portfolio website showcasing my design, web development, and creative projects.">   <!-- Описание страницы для поисковых систем -->
     <meta name="keywords" content="portfolio, design, web development, UI/UX, digital art, graphic design">  <!-- Ключевые слова для поисковых систем -->
+    
+    
+    
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
 
     <title>Portfolio</title>
     <link rel="stylesheet" href="reset.css">
@@ -120,32 +124,32 @@
                     <article class="contents">
                         <h1 id="ContentHeader">Contents</h1>
                         <div class="content_buttons">
-                            <button type="button" class="btn2">
+                            <button type="button" class="btn2"  onclick="goToPostersPage()">
                                 <h1>01</h1>
-                                 <span class="small"> Posters</span>
+                                 <span class="small"> Posters </span>
                             </button>
 
-                            <button type="button" class="btn2">
+                            <button type="button" class="btn2"  onclick="goTo3dPage()" >
                                 <h1>02</h1>
                                  <span class="small"> 3D Modeling</span>
                             </button>
 
-                            <button type="button" class="btn2">
+                            <button type="button" class="btn2"  onclick="goToTypograthyPage()">
                                 <h1>03</h1>
                                  <span class="small"> Typograthy</span>
                             </button>
 
-                            <button type="button" class="btn2">
+                            <button type="button" class="btn2"  onclick="goToLogoPage()">
                                 <h1>04</h1>
                                  <span class="small"> Logo</span>
                             </button>
 
-                            <button type="button" class="btn2">
+                            <button type="button" class="btn2"  onclick="goToProjectPage()">
                                 <h1>05</h1>
                                  <span class="small"> Personal Project</span>
                             </button>
 
-                            <button type="button" class="btn2">
+                            <button type="button" class="btn2"  onclick="goToArtsPage()">
                                 <h1>06</h1>
                                  <span class="small"> Arts</span>
                             </button>
@@ -154,41 +158,7 @@
                 </section>
 
 
-            </article>
-                
-                <div class="zagolovok"><h1>Posters</h1></div>
-
-                <div class="controls">  
-                    
-                    <img src="images/strelka2.svg" alt="Left navigation arrow button for browsing through gallery items" id="leftBtn">
-                    <div class="allcontents">
-                        <div class="gallery">
-                            <span><img src="images/Posters1.png"></span>
-                        </div>
-
-                        <div class="gallery">
-                            <span><img src="images/Posters2.png"></span>
-                        </div>
-                    
-                </div>
-                    <img src="images/strelka.svg" alt="Right navigation arrow button for moving forward in the gallery" id="rightBtn">
-                </div>
-
-                <script>
-                    let horizontScroll = document.querySelector('.allcontents')
-                    let leftBtn =  document.getElementById('leftBtn');
-                    let rightBtn =  document.getElementById('rightBtn');
-
-                    rightBtn.addEventListener('click', ()=> {
-                        horizontScroll.style.scrollBehavior = "smooth";
-                        horizontScroll.scrollLeft += 1000;
-                    })
-                    leftBtn.addEventListener('click', ()=> {
-                        horizontScroll.scrollLeft -= 1000;
-                        horizontScroll.style.scrollBehavior = "smooth";
-                    })
-                </script>
-               <div class="text"><h3>Posters for the films</h3></div>
+           
                 
         </section>
 

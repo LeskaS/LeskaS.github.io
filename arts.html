@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="phon_posters">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Olesya Sorokina">  <!-- Автор страницы -->
+    <meta name="description" content="This is a portfolio website showcasing my design, web development, and creative projects.">   <!-- Описание страницы для поисковых систем -->
+    <meta name="keywords" content="portfolio, design, web development, UI/UX, digital art, graphic design">  <!-- Ключевые слова для поисковых систем -->
+    
+    
+    
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="posters.css">
+
+</head>
+<body>
+
+    <div class="wrapper"> <!-- для фона -->
+        <div id="scrollToportfolio-image" class = "arrow"><img src="images/arrow.svg" alt="Arrow icon to scroll the page upwards to the top" ></div>
+        <section>
+            <header class="container"> : <!-- класс, кот указывает отступы по бокам. для каждой новой секции одинак отступ справа и слева-->
+                <nav> <!-- навигация -->
+                    <button onclick="goToMainPage()">Go to the main page</button>
+                  
+                </nav>
+               
+            </header>
+            </div>
+            </div>
+        </section>
+
+        <section>
+         
+            </article>
+                
+                <div class="zagolovok"><h1>Arts</h1></div>
+
+                <div class="controls">  
+                    
+                    <img src="images/strelka2.svg" alt="Left navigation arrow button for browsing through gallery items" id="leftBtn">
+                    <div class="allcontents">
+                        <div class="gallery">
+                            <span><img src="images/art2.png"></span>
+                        </div>
+
+                        <div class="gallery">
+                            <span><img src="images/art1.png"></span>
+                        </div>
+                        <div class="gallery">
+                            <span><img src="images/art3.png"></span>
+                        </div>
+                        <div class="gallery">
+                            <span><img src="images/art4.png"></span>
+                        </div>
+                    
+                </div>
+                    <img src="images/strelka.svg" alt="Right navigation arrow button for moving forward in the gallery" id="rightBtn">
+                </div>
+
+                <script>
+                    let horizontScroll = document.querySelector('.allcontents')
+                    let leftBtn =  document.getElementById('leftBtn');
+                    let rightBtn =  document.getElementById('rightBtn');
+
+                    rightBtn.addEventListener('click', ()=> {
+                        horizontScroll.style.scrollBehavior = "smooth";
+                        horizontScroll.scrollLeft += 1000;
+                    })
+                    leftBtn.addEventListener('click', ()=> {
+                        horizontScroll.scrollLeft -= 1000;
+                        horizontScroll.style.scrollBehavior = "smooth";
+                    })
+                </script>
+             
+                
+        </section>
+            
+
+            </div>
+            </div>
+        </section>
+        
+    
+     </div>
+     
+
+
+
+        
+
+
+<script src="myscript.js"></script>
+<script src="scrollToIntroduction.js"></script>
+
+<script src="scrollToContent.js"></script>
+<script src="scrollToContacts.js"></script>
+<script src="scrollToportfolio-image.js"></script>
+</body>
+
+</html>

@@ -80,3 +80,33 @@ document.getElementById('scrollToportfolio-image').addEventListener('click', fun
         console.error('Element with ID "portfolioImage" not found.');
     }
 });
+
+
+function goToPostersPage() {
+    window.location.href = 'posters.html';
+}
+
+function goToMainPage() {
+    window.location.href = 'index.html';
+}
+
+function goTo3dPage() {
+    window.location.href = '3d.html';
+}
+
+
+function goToTypograthyPage() {
+    window.location.href = 'typogtaphy.html';
+}
+
+function goToLogoPage() {
+    window.location.href = 'logo.html';
+}
+
+function goToProjectPage() {
+    window.location.href = 'project.html';
+}
+
+function goToArtsPage() {
+    window.location.href = 'arts.html';
+}
