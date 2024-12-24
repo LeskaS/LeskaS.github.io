@@ -356,7 +356,7 @@ html {
 
 .contents h1 {
   padding-left: 37vw;
-  padding-top: 18%;
+  padding-top: 20%;
 }
 
 .content_buttons {
@@ -507,7 +507,7 @@ img.smalls.next {
 
 .contacts_h {
   padding-left: 39%;
-  padding-top: 20%;
+  padding-top: 30%;
 }
 
 .contacts1 {
@@ -521,7 +521,7 @@ img.smalls.next {
 }
 
 .contacts1 img {
-  border: 0.1rem solid rgb(255, 255, 255);
+
   padding: 0.5rem;
 }
 
